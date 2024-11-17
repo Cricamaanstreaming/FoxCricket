@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Telegram-Cric mantra </title>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.25.1/jwplayer.js"></script>
+</head>
+<style>
+    body {
+      margin: 0;
+    }
+    .jwplayer {
+      position: absolute !important;
+    }
+    .jwplayer.jw-flag-aspect-mode {
+      min-height: 100%;
+      max-height: 100%;
+    }
+</style>
+<body>
+
+<div id="player"></div>
+
+<script>
+    if (confirm("Join Our Telegram Channel ")) {
+        window.location.href = "https://t.me/+kfJZ4exLottkOTY1";
+    }
+
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
+    window.onload = function() {
+        var playerInstance = jwplayer("player");
+
+        // Define the M3U8 stream source
+        var source = {
+            "file": "http://46.229.253.219/live/green123/green123/415534.m3u8?token=ShJcU0BbQQNHXAxcVAcCCQgDAVFSBVECBloDAVAGCwMFUwMKV1JRXF0bGBpEF0dcWF1vWQIXXlUAV1cEUUgRR0JVRm1aV0EDRwwNCQFVBxsVEkRZC1BGWwFOQEcMABEIX0VYXh8RBkERXEZWVg9qXVxGWVMDF14PRA4OG0cLXW1VVVlTXVdBA0cIFhQVCkZJGwpeRQpZSENTCxZFBBBWEAteQV5fH0FaCkxaTEUaFwMbZWMSShcBGUUHDEQMC10QCxJZAUYLQRVHUEdnRQZGTUtVUV0DR0ZbE1JAG0cJUkpuU1tcXVYATQxWWksVWRcIGxwSXQlbDRVeED1HDAARCF9FWF5O",
+            "type": "hls",
+            "default": true
+        };
+
+        // Player setup with the M3U8 stream source
+        playerInstance.setup({
+            playlist: [{
+                "sources": [source]
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+        });
+    };
+</script>
+
+</body>
+</html>
